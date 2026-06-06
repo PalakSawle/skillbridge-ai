@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: skillbridge-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - skillbridge-network
+
+  ai-service:
+    build: ./ai-service
+    container_name: skillbridge-ai-service
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+    networks:
+      - skillbridge-network
+    volumes:
+      - ./ai-service:/app
+
+  backend:
+    build: ./backend
+    container_name: skillbridge-backend
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - MONGO_URI=mongodb://mongodb:27017/skillbridge
+      - JWT_SECRET=skillbridge_jwt_secret_key_2026
+      - AI_SERVICE_URL=http://ai-service:8000
+    depends_on:
+      - mongodb
+      - ai-service
+    networks:
+      - skillbridge-network
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+
+  frontend:
+    build: ./frontend
+    container_name: skillbridge-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - skillbridge-network
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+
+volumes:
+  mongo-data:
+
+networks:
+  skillbridge-network:
+    driver: bridge

@@ -1,0 +1,38 @@
+JOHN DOE
+Email: john.doe@university.edu
+Phone: (555) 123-4567
+GitHub: github.com/johndoe | LinkedIn: linkedin.com/in/johndoe
+
+EDUCATION
+Bachelor of Science in Computer Science
+State University | Graduating May 2026
+GPA: 3.8/4.0
+
+TECHNICAL SKILLS
+Languages: JavaScript, HTML5, CSS3, Python, SQL
+Frameworks/Libraries: React, Node.js, Express, Bootstrap
+Tools: Git, GitHub, VS Code, Postman
+Databases: MongoDB, MySQL
+
+PROJECTS
+E-Commerce Storefront
+- Built a responsive web app using React, Node.js, and MongoDB.
+- Implemented secure JWT authentication and password hashing.
+- Integrated payment mockups using axios.
+- Github: repo-link
+
+Task Management API
+- Created a RESTful API using Express and Node.js.
+- Used MongoDB (Mongoose) for relational document models.
+- Set up unit testing using Jest.
+
+EXPERIENCE
+Software Engineer Intern
+Tech Solutions Inc. | Summer 2025
+- Collaborated with 5 developers to build client dashboards.
+- Refactored legacy React components to modern functional components with hooks.
+- Assisted in optimizing database queries on MySQL.
+
+CERTIFICATIONS
+- Certified React Developer (freeCodeCamp, 2025)
+- SQL Fundamentals (HackerRank, 2024)

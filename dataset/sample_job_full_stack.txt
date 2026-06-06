@@ -1,0 +1,19 @@
+JOB DESCRIPTION: FULL STACK SOFTWARE ENGINEER
+
+About the Role:
+We are seeking a talented Junior Full Stack Software Engineer to join our growing engineering team. In this role, you will build dynamic web applications, integrate microservices, and manage containerized deployments.
+
+Key Requirements:
+- Professional experience or academic background in Software Engineering.
+- Strong proficiency in modern JavaScript, TypeScript, React, and Node.js.
+- Experience design and building REST APIs and working with MongoDB/SQL databases.
+- Hands-on experience containerizing applications using Docker is highly preferred.
+- Familiarity with Kubernetes orchestrations, CI/CD pipelines, and AWS cloud deployments.
+- Strong problem solving, active communication, and teamwork skills.
+
+What You Will Do:
+- Build and maintain frontend web application components in React.
+- Design backend microservices using Node.js and TypeScript.
+- Containerize local microservice setups using Docker and Docker Compose.
+- Collaborate with cloud teams to deploy applications on AWS.
+- Participate in Agile Scrum sprints and contribute to team code reviews.
